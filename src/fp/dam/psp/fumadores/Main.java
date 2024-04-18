@@ -16,6 +16,7 @@ import javax.swing.SwingUtilities;
 
 public class Main extends JFrame implements WindowListener {
 
+	//! CODIGO INICAL
 	private static final long serialVersionUID = 1L;
 	private static final JTextArea textArea = new JTextArea();
 	private JButton pausa = new JButton("PAUSA");
@@ -26,6 +27,7 @@ public class Main extends JFrame implements WindowListener {
 	private Fumador f1 = new Fumador("Fernándo", Ingrediente.TABACO, mesa);
 	private Fumador f2 = new Fumador("Manuela", Ingrediente.CERILLAS, mesa);
 	private Fumador f3 = new Fumador("Carmen", Ingrediente.PAPEL, mesa);
+
 	
 	public Main() {
 		super("Fumadores");
@@ -51,18 +53,32 @@ public class Main extends JFrame implements WindowListener {
 		SwingUtilities.invokeLater(() -> textArea.append(msg));
 	}
 	
-	private void pausa(ActionEvent e) {
+	private synchronized void pausa(ActionEvent e) {
 		pausa.setEnabled(false);
 		reanudar.setEnabled(true);
 		textArea.append("PAUSADO\n");
 		// TODO pausar fumadores y agente
+
+		//? Con el metodo en desuso de "suspend" si que funciona.
+		f1.suspend();
+		f2.suspend();
+		f3.suspend();
+		agente.suspend();
 	}
 	
-	private void reanudar(ActionEvent e) {
+	private synchronized void reanudar(ActionEvent e) {
 		pausa.setEnabled(true);
 		reanudar.setEnabled(false);
 		textArea.append("REANUDADO\n");
 		// TODO reanudar fumadores y agente
+		
+		//? Con estos metodos si que funciona, pero estan en desuso.
+		agente.resume();
+		f1.resume();
+		f2.resume();
+		f3.resume();
+		
+
 	}
 	
 	private void iniciar() {
@@ -88,6 +104,12 @@ public class Main extends JFrame implements WindowListener {
 	@Override
 	public void windowClosing(WindowEvent e) {
 		// TODO finalizar hilos de forma ordenada antes de salir
+		f1.stop();
+		f2.stop();
+		f3.stop();
+		agente.stop();
+
+
 		System.exit(0);
 	}
 
