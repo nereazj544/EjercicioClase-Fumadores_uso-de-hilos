@@ -29,5 +29,5 @@ Los forks son duplicaciones de repositorios.
 >Otros videos de interes sobre GitHub: https://www.youtube.com/playlist?list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW
 
 
->[!IMPORTAN]
+>[!IMPORTANT]
 >En resumen, es lo mismo si le das al boton de code > Dowload ZIP
