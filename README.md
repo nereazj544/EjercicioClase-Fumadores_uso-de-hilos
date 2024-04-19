@@ -1,12 +1,20 @@
-# Ejercicios: fumadores
+# Un poco de todo
+## Tabla de contenidos
+1. [Ejercicios: fumadores](#ejercicios-fumadores)
+2. [FORK](#fork)
+3. [¿Como hacer un fork?](#¿como-hacer-un-fork)
+4. [Eclipse Github Clonar](#eclipse-github-clonar)
+5. [Importar proyectos en Eclipse](#importar-proyectos-en-eclipse)
+
+## Ejercicios: fumadores
 >[!NOTE]
 >Usando los metodos en **desususo**: suspend, resume, stop el programa hace lo que deberia de hacer, parar y reaunudar. 
 >"Y con eso te ahorras de modificar las demas clases" 
 
-# FORK
+## FORK
 Los forks son duplicaciones de repositorios.
 
-# ¿Como hacer un FORK?
+## ¿Como hacer un FORK?
     - Darle clik al icono del Fork y luego elegir el perfil
     - Se clorana en el perfil de GitHub
     - Se copiara la ruta del repositorio 
@@ -16,7 +24,7 @@ Los forks son duplicaciones de repositorios.
 >[!NOTE]
 >Video de referencia: https://www.youtube.com/watch?v=3m7Z3g_U-Cs 
 
-# Eclipse
+## Eclipse GitHub Clonar
     - Importar > Git > Project from Git > Clone URL
         - URL (del repositorio a clonar) (Acabar con la extension de ".git")
         - Host: github.com
@@ -31,3 +39,9 @@ Los forks son duplicaciones de repositorios.
 
 >[!IMPORTANT]
 >En resumen, es lo mismo si le das al boton de code > Dowload ZIP
+
+
+## Importar proyectos en Eclipse
+
+>[!NOTE]
+>Video de referencia: https://youtu.be/dFDxJl34R98
