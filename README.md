@@ -42,6 +42,15 @@ Los forks son duplicaciones de repositorios.
 
 
 ## Importar proyectos en Eclipse
+    - Import... > General > Existing Projects into Workspace
+
+>[!IMPORTANT]
+>Aqui hay que selecionar entre dos opciones, una de ellas te va importar la carpeta contenedor (donde tienes el zip) y la otra la ruta del zip
+
+    - Select root diretory (carpeta raiz)
+    - Select archive file (zip)
+    -Deja todo por defecto y finalizar.
+
 
 >[!NOTE]
 >Video de referencia: https://youtu.be/dFDxJl34R98
